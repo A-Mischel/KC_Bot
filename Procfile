@@ -1,1 +1,1 @@
-worker: python KC_Bot.py
+worker: python bot1.py
