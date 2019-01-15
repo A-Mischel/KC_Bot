@@ -33,4 +33,4 @@ async def on_message(message):
         remark = quotes[option]
         await client.send_message(message.channel, remark)
 
-client.run("NTM0NzkwMDYxMzkzMTgyNzIy.Dx-uOQ.65tKa2UKvQq91bQwLBAbjJeETC0")
+client.run(os.getenv("TOKEN"))
