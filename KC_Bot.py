@@ -28,7 +28,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content == 'hey KC':
+    if message.content.upper() in ('HEY KC', '!HEY KC'):
         option = random.randint(0, 7)
         remark = quotes[option]
         await client.send_message(message.channel, remark)
