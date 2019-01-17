@@ -57,8 +57,18 @@ async def Hey(message):
         remark = quotes[option]
         await client.send_message(message.channel, remark)
         client.counter = option
+        
 
-
+@client.command()
+async def giri(message):
+    if message.content.upper() =='Giri':
+         await client.send_message(message.channel, 'draws')
+            
+    
+@client.command()
+async def Finegold(message):
+    if message.content.upper() =='Finegold':
+         await client.send_message(message.channel, 'RAWR...fries?')
 
 
 client.run(os.getenv("TOKEN"))
