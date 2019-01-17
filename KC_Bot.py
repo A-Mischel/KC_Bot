@@ -46,7 +46,7 @@ async def KC():
 
 @client.command()
 async def Hey(message):
-    if message.content.upper() in ('HEY PC', '!HEY PC'):
+    if message.content.upper() =='HEY KC':
         option = random.randint(0, 8)
         if option == client.counter:
             if option == 0:
