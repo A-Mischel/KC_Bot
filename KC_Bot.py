@@ -61,13 +61,13 @@ async def Hey(message):
 
 @client.command()
 async def giri(message):
-    if message.content.upper() =='Giri':
+    if message.content.upper() =='GIRI':
          await client.send_message(message.channel, 'draws')
             
     
 @client.command()
 async def Finegold(message):
-    if message.content.upper() =='Finegold':
+    if message.content.upper() =='FINEGOLD':
          await client.send_message(message.channel, 'RAWR...fries?')
 
 
