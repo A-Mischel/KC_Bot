@@ -6,7 +6,7 @@ import time
 import random
 import os
 
-Client = discord.Client()
+client = discord.Client()
 client = commands.Bot(command_prefix="!")
 
 quotes = {
@@ -25,6 +25,27 @@ quotes = {
 @client.event
 async def on_ready():
     print("operational")
+    
+    
+@client.command()
+async def KC():
+    embed = discord.Embed(
+        title='\t---KC_Bot---',
+        description="I'm always watching ya wee shite! \n **Side note:** Feel free to message me if you have any suggestions or want to add content",
+        colour=discord.Color.dark_red()
+    )
+
+    embed.set_footer(text='All source code can be found here: https://github.com/A-Mischel/KC_Bot')
+    embed.set_image(url='https://en.chessbase.com/portals/all/2018/01/banter-blitz/kingscrusher-pic2.jpg')
+    embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/535165334450208778/535193619745996810/kccommunism.png')
+    embed.set_author(name='skidabit', icon_url='https://yt3.ggpht.com/a-/AN66SAzbnAE9jmsJ1skkqEYTdjWJ6NN3ihKgpcoCGw=s900-mo-c-c0xffffffff-rj-k-no')
+    embed.add_field(name='Command:  Hey KC', value='-To get a fresh baked, locally grown quote from the legend himself.', inline=False)
+    embed.add_field(name='Command:  !KC', value=' -An Overview of your Overlord. ', inline=False)
+    embed.add_field(name='etc...', value='More commands coming soon ', inline=True)
+    embed.add_field(name='side note', value='you can send me suggestions or hmu if you wanna add content.', inline=True)
+
+    await client.say(embed=embed)
+
 
 
 client.counter = 1
