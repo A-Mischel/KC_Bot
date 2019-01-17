@@ -27,7 +27,7 @@ async def on_ready():
     print("operational")
     
     
-@client.command()
+'''@client.command()
 async def KC():
     embed = discord.Embed(
         title='\t---KC_Bot---',
@@ -44,7 +44,7 @@ async def KC():
     embed.add_field(name='etc...', value='More commands coming soon ', inline=True)
     embed.add_field(name='side note', value='you can send me suggestions or hmu if you wanna add content.', inline=True)
 
-    await client.say(embed=embed)
+    await client.say(embed=embed)'''
 
 
 
