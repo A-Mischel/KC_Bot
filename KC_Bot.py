@@ -27,7 +27,7 @@ async def on_ready():
     print("operational")
 
 
-@client.command()
+@client.command()   #This is just the embeded page with all the bot info
 async def KC():
     embed = discord.Embed(
         title='\t---KC_Bot---',
@@ -48,10 +48,10 @@ async def KC():
 @client.command()
 async def Hey(message):
     if message.content.upper() =='HEY KC':
-        option = random.randint(0, 8)
-        if option == client.counter:
-            if option == 0:
-                option += 1
+        option = random.randint(0, 8)  # the random number corresponds with a quote
+        if option == client.counter:   #basically im just making sure no quote repeats. 
+            if option == 0:            #so if the previos quote = the current quote I minus 1 from the random number 
+                option += 1            #and if that the number is zero then i just add 1
             else:
                 option -= 1
         remark = quotes[option]
