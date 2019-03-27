@@ -30,7 +30,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content.startswith('heil'):
+    if message.content.startswith('hail'):
         await client.send_message(message.channel, '<:kccommunism:521941843395608576>')
     await client.process_commands(message)
 
